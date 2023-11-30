@@ -153,7 +153,7 @@ int main() {
 
 
         start = std::chrono::high_resolution_clock::now();
-        mergeInsertionSort(reverse, 0, n);
+        mergeSort(reverse, 0, n);
         elapsed = std::chrono::high_resolution_clock::now() - start;
         millisec = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
         std::cout << "end-to-start order equal arrays: " << millisec << ' ';
@@ -170,7 +170,7 @@ int main() {
 
 
         start = std::chrono::high_resolution_clock::now();
-        mergeInsertionSort(almost, 0, n);
+        mergeSort(almost, 0, n);
         elapsed = std::chrono::high_resolution_clock::now() - start;
         millisec = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
         std::cout << "almost sorted arrays: " << millisec << ' ';
