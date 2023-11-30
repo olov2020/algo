@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 rows = []
-with open('C:/Users/vladimir/Desktop/vladimir/HSE/2 курс/аисд/contest/output.csv') as f:
+with open('output.csv') as f:
     for line in f:
         line = line.strip()
         line = line.split(';')
