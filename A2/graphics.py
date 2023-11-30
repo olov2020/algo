@@ -15,7 +15,12 @@ with open('output_A2.csv') as f:
         rows.append(line)
 # print(rows)
 for i in range(len(rows)):
-    plt.scatter(rows[i][0], rows[i][1])
-
+    plt.scatter(rows[i][0], rows[i][2])
+plt.show()
+for i in range(len(rows)):
+    plt.scatter(rows[i][3], rows[i][4])
+plt.show()
+for i in range(len(rows)):
+    plt.scatter(rows[i][4], rows[i][5])
 plt.show()
 
